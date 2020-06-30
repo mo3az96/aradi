@@ -132,7 +132,146 @@
     <!-- Start Add Form -->
     <div class="content">
         <img src="images/pat2.png" class="posts-pat">
+        <div class="container">
+            <div class="add-post-cont">
+                <h4 class="addPost-head fixall">أعلن عن أرضك</h4>
+                <form class="add-form">
+                    <div class="post-id">
+                        <span class="add-label">رقم الاعلان</span>
+                        <div class="postid-num">#123456</div>
+                    </div>
+                    <div class="add-inputlabel req">
+                        <span class="add-label">الاسم كامل</span>
+                        <div class="add-inputs">
+                            <div class="input-cont">
+                                <input type="text" class="input-fff add-input fixall" placeholder="أدخل الأسم كامل">
+                            </div>
+                            <div class="input-dec">
+                                <div class="custom-check">
+                                    <input type="checkbox" checked>
+                                    <span class="checkboxmark"></span>
+                                    لن يظهر الاسم بالاعلان
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-inputlabel req">
+                        <span class="add-label">رقم الجوال</span>
+                        <div class="add-inputs">
+                            <div class="input-cont">
+                                <input type="number" class="input-fff add-input fixall" placeholder="أدخل رقم الجوال">
+                            </div>
+                            <div class="input-dec">
+                                05XXXXXX
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-inputlabel req">
+                        <span class="add-label">صفة المعلن</span>
+                        <div class="select-cont">
+                            <select class="add-select">
+                                <option hidden>اختر من القائمة</option>
+                                <option value="1">صفة 1</option>
+                                <option value="2">صفة 2</option>
+                                <option value="3">صفة 3</option>
+                                <option value="4">صفة 4</option>
+                                <option value="5">صفة 5</option>
+                                <option value="6">صفة 6</option>
+                                <option value="7">صفة 7</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="add-inputlabel req">
+                        <span class="add-label">نوع الأرض ( بيع )</span>
+                        <div class="select-cont">
+                            <select class="add-select">
+                                <option hidden>اختر من القائمة</option>
+                                <option value="1">سكنية 1</option>
+                                <option value="2">سكنية 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="add-inputlabel req">
+                        <span class="add-label">المدينة \ المحافظة</span>
+                        <div class="input-cont">
+                            <input type="text" class="input-fff add-input fixall" placeholder="أدخل المدينة \ المحافظة">
+                        </div>
+                    </div>
+                    <div class="add-inputlabel req">
+                        <span class="add-label">الحي</span>
+                        <div class="input-cont">
+                            <input type="text" class="input-fff add-input fixall" placeholder="ادخل اسم الحي">
+                        </div>
+                    </div>
+                    <div class="add-inputlabel req">
+                        <span class="add-label">المساحة</span>
+                        <div class="input-cont">
+                            <input type="number" class="input-fff add-input fixall" placeholder="ادخل المساحة بالمتر">
+                        </div>
+                    </div>
+                    <div class="add-inputlabel req">
+                        <span class="add-label">الواجهة</span>
+                        <div class="inputs3-group">
+                            <div class="input-cont">
+                                <input type="number" class="input-fff add-input fixall" placeholder="ادخل عدد الشوارع">
+                            </div>
+                            <div class="inputs-line">
+                                <div class="input-cont">
+                                    <input type="number" class="input-fff add-input fixall" placeholder="عرض الشارع">
+                                </div>
+                                <div class="input-cont">
+                                    <input type="number" class="input-fff add-input fixall" placeholder="الاتجاه">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-inputlabel req">
+                        <span class="add-label">الأطوال</span>
+                        <div class="inputs2-group">
+                            <div class="input-cont">
+                                <input type="number" class="input-fff add-input fixall" placeholder="الأطوال">
+                            </div>
+                            <div class="input-cont">
+                                <input type="number" class="input-fff add-input fixall" placeholder="العمق">
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="add-inputlabel req">
+                        <span class="add-label">السعر</span>
+                        <div class="add-inputs">
+                            <div class="input-cont">
+                                <input type="text" class="input-fff add-input fixall" placeholder="ادخل سعر المتر">
+                                <span class="add-text">السعر بدون ضريبة</span>
+                            </div>
+                            <div class="input-btn">
+                                <a href="calc.html" class="calc-post fixall mo-btn">الحاسبة العقارية</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="add-inputlabel ">
+                        <span class="add-label">أرفق صورة صك الارض</span>
+                        <div class="input-file-cont">
+                            <input type="file" class="input-file fixall">
+                            <span class="file-text">+ أرفق صورة صك الارض</span>
+                        </div>
+                    </div>
+                    <div class="condtion-row ">
+                        <span class="add-label"></span>
+                        <div class="condtion-cont">
+                            <div class="custom-check">
+                                <input type="checkbox" checked>
+                                <span class="checkboxmark"></span>
+                                أوافق على كل
+                            </div>
+                            <a href="#!" class="conditions fixall">الشروط و سياسة الاستخدام</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="add-submit fixall mo-btn">أعلن عن أرض</button>
+                </form>
+            </div>
+        </div>
     </div>
     <!-- End Add Form -->
 
