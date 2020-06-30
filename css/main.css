@@ -1326,26 +1326,26 @@ header {
   color: #006ec9;
 }
 
-.posts-cont {
+.content {
   position: relative;
   overflow: hidden;
   padding-top: 138px;
 }
 
-.posts-cont .posts-pat {
+.content .posts-pat {
   position: absolute;
   top: -339px;
   left: 0;
 }
 
 @media (max-width: 992px) {
-  .posts-cont .posts-pat {
+  .content .posts-pat {
     display: none;
   }
 }
 
 @media (max-width: 992px) {
-  .posts-cont {
+  .content {
     padding-top: 60px;
   }
 }
