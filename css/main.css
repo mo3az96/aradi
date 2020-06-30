@@ -118,6 +118,21 @@ input[type=number] {
   }
 }
 
+.calc-submit {
+  width: 310px;
+  height: 65px;
+  font-size: 18px;
+  margin: 30px auto 0;
+}
+
+@media (max-width: 992px) {
+  .calc-submit {
+    width: 100%;
+    margin-top: 20px;
+    height: 53px;
+  }
+}
+
 .input-cont {
   position: relative;
 }
@@ -142,7 +157,7 @@ input[type=number] {
   background-color: #fff;
   border: 2px solid transparent;
   padding: 0 23px;
-  color: #8c8c8c;
+  color: #006ec9;
   font-size: 16px;
   text-align: right;
   -webkit-transition: all 0.3s ease-in-out;
@@ -179,7 +194,6 @@ input[type=number] {
 .contact-input {
   background-color: #f5f5f5;
   padding-right: 47px;
-  color: #8c8c8c;
 }
 
 .contact-ico {
@@ -1421,6 +1435,180 @@ header {
 @media (max-width: 992px) {
   .posts {
     margin-top: 20px;
+  }
+}
+
+.calc {
+  padding-top: 133px;
+}
+
+@media (max-width: 992px) {
+  .calc {
+    padding-top: 60px;
+  }
+}
+
+.calc-cont {
+  background-color: #f5f5f5;
+  padding-right: 24px;
+  padding-left: 69px;
+  padding-bottom: 104px;
+  padding-top: 83px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 992px) {
+  .calc-cont {
+    padding: 40px 15px;
+  }
+}
+
+.calc-head {
+  color: #006ec9;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.calc-form {
+  margin-top: 40px;
+}
+
+.calc-subhead {
+  font-size: 18px;
+  text-align: center;
+  color: #455a64;
+}
+
+.calc-inputlabel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 178px 1fr;
+      grid-template-columns: 178px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 992px) {
+  .calc-inputlabel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.calc-inputlabel .input-cont {
+  width: 100%;
+}
+
+.calc-inputlabel .calc-input {
+  padding: 0 26px;
+  font-size: 24px;
+  width: 100%;
+  height: 65px;
+}
+
+.calc-inputlabel .calc-input::-webkit-input-placeholder {
+  font-size: 18px;
+}
+
+.calc-inputlabel .calc-input:-ms-input-placeholder {
+  font-size: 18px;
+}
+
+.calc-inputlabel .calc-input::-ms-input-placeholder {
+  font-size: 18px;
+}
+
+.calc-inputlabel .calc-input::placeholder {
+  font-size: 18px;
+}
+
+@media (max-width: 992px) {
+  .calc-inputlabel .calc-input {
+    height: 53px;
+  }
+}
+
+.calc-inputlabel .calc-text {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 18px;
+  color: #263238;
+}
+
+.calc-inputlabel.req .calc-label:after {
+  content: "*";
+  color: #f00;
+}
+
+.calc-label {
+  font-size: 18px;
+  color: #757575;
+}
+
+@media (max-width: 992px) {
+  .calc-label {
+    margin-bottom: 7px;
+    padding: 0 5px;
+  }
+}
+
+.calc-line {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 546px 1fr;
+      grid-template-columns: 546px 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 992px) {
+  .calc-line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: none;
+  }
+}
+
+.calc-line .calc-inputlabel:last-of-type {
+  -ms-grid-columns: 132px 1fr;
+      grid-template-columns: 132px 1fr;
+}
+
+@media (max-width: 992px) {
+  .calc-line .calc-inputlabel:last-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
