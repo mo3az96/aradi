@@ -1123,7 +1123,7 @@ main .main-pat {
 
 @media (max-width: 767px) {
   .pre-loader img {
-    width: 130px;
+    width: 200px;
   }
 }
 
