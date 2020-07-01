@@ -1887,11 +1887,16 @@ header {
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
     left: -30px;
+    min-width: 200px;
+    padding: 15px;
   }
   .tool-tip.img-hint:before {
     left: 30px;
     -webkit-transform: none;
             transform: none;
+  }
+  .tool-tip.img-hint .hint-desc {
+    white-space: nowrap;
   }
 }
 
