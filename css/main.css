@@ -630,20 +630,21 @@ main .main-pat {
 
 .post {
   width: 100%;
+  max-width: 370px;
   position: relative;
   padding: 18px 25px;
-  margin: 27px 0;
+  margin: 27px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 992px) {
   .post {
-    margin: 20px 0;
+    margin: 20px auto;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 400px) {
   .post {
     padding: 18px 20px;
   }
@@ -656,6 +657,7 @@ main .main-pat {
   right: 15px;
   bottom: 15px;
   border: 2px solid #006ec9;
+  z-index: 2;
 }
 
 .post .post-blue-border .cat {
@@ -690,10 +692,10 @@ main .main-pat {
   -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
   background-color: #f5f5f5;
-  z-index: 1;
+  z-index: 3;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 400px) {
   .post .post-bg {
     width: 90%;
   }
@@ -708,12 +710,12 @@ main .main-pat {
 .post .post-logo {
   width: 105px;
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 
 .post .post-info {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   margin-top: 37px;
 }
 
@@ -928,7 +930,7 @@ main .main-pat {
 
 .post .post-call {
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   right: 0;
   bottom: 0;
   height: 42px;
@@ -992,10 +994,10 @@ main .main-pat {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: -3px;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
   border: 3px solid #ffc107;
   background-color: transparent;
   content: "";
@@ -1010,18 +1012,17 @@ main .main-pat {
   background-color: #fff;
   color: #ffc107;
   position: absolute;
-  top: -15px;
-  left: -15px;
-  z-index: 5;
+  top: -19px;
+  left: -8px;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .post.special:hover {
@@ -2525,7 +2526,7 @@ nav .contacts {
     display: flex;
     margin: 0;
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
