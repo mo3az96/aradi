@@ -89,8 +89,9 @@
     <!-- Start Main -->
     <main style="background-image: url(images/main2.jpg);" class="org-page">
         <img src="images/pat1.png" class="main-pat">
-        <div class="fixed-form search-cont">
-            <form class="search-form">
+
+        <div class="fixed-form">
+            <form class="search-form search-cont">
                 <div class="search-line">
                     <div class="input-cont">
                         <input type="text" class="input-fff search-input fixall"
@@ -135,92 +136,80 @@
     </main>
     <!-- End Main -->
 
-    <!-- Start calc -->
-    <div class="content calc">
-        <img src="images/pat2.png" class="posts-pat">
+    <!-- Start Posts -->
+    <div class="content">
         <div class="container">
-            <div class="calc-cont">
-                <h1 class="calc-head fixall">الحاسبة العقارية</h1>
-                <h3 class="calc-subhead fixall">ادخل السعر والمساحة بالمتر لحساب السعي والضريبة</h3>
-                <form class="calc-form">
-                    <div class="calc-inputlabel req">
-                        <div class="calc-label"><span>ادخل السعر بالريال</span></div>
-                        <div class="input-cont">
-                            <input type="number" class="input-fff calc-input fixall" placeholder="XXXXXX">
-                            <span class="calc-text">ريال</span>
-                        </div>
-                    </div>
-                    <div class="calc-inputlabel req">
-                        <div class="calc-label"><span>ادخل مساحة الارض</span></div>
-                        <div class="input-cont">
-                            <input type="number" class="input-fff calc-input fixall" placeholder="XXXXXX">
-                            <span class="calc-text">متر</span>
-                        </div>
-                    </div>
-                    <a href="#!" class="mo-btn calc-submit fixall">احسب</a>
-                    <div class="calc-line">
-                        <div class="calc-inputlabel">
-                            <div class="calc-label"> <span>السعر</span> </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="contact-form">
+                        <h4 class="contact-head fixall">للإستفسارات</h4>
+                        <form>
                             <div class="input-cont">
-                                <input type="number" class="input-fff calc-input fixall" disabled>
-                                <span class="calc-text">ريال</span>
+                                <input type="text" class="input-fff contact-input fixall" placeholder="الاسم بالكامل">
+                                <span class="contact-ico"><i class="fas fa-user"></i></span>
+                            </div>
+                            <div class="contact-line">
+                                <div class="input-cont">
+                                    <input type="email" class="input-fff contact-input fixall"
+                                        placeholder="البريد الالكتروني">
+                                    <span class="contact-ico"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <div class="input-cont">
+                                    <input type="number" class="input-fff contact-input fixall"
+                                        placeholder="رقم الجوال">
+                                    <span class="contact-ico"><i class="fas fa-mobile-alt"></i></span>
+                                </div>
+                            </div>
+                            <div class="input-cont input-text">
+                                <textarea class="input-fff contact-input  fixall" placeholder="نص الرسالة"></textarea>
+                                <span class="contact-ico"><i class="fas fa-comment-alt"></i></span>
+                            </div>
+                            <button type="submit" class="mo-btn fixall contact-submit">ارسل</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-info">
+                        <h4 class="contact-head fixall">معلومات التواصل</h4>
+                        <div class="contact-ul">
+                            <div class="contact-method">
+                                <i class="fas fa-phone"></i>
+                                <div class="contact-text">
+                                    <span>هاتف</span>
+                                    <a href="tel:0568757475" class="contact-way fixall">
+                                        0568757475
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <div class="contact-text">
+                                    <span>البريد الإلكتروني </span>
+                                    <a href="mailto:info@arady_ksa.com" class="contact-way fixall">
+                                        info@arady_ksa.com
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="calc-inputlabel">
-                            <div class="calc-label"><span>القيمة المضافة</span></div>
-                            <div class="input-cont">
-                                <input type="number" class="input-fff calc-input fixall" disabled value="1500">
-                                <span class="calc-text">ريال</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="calc-inputlabel">
-                        <div class="calc-label"><span>حساب سعر الارض</span></div>
-                        <div class="input-cont">
-                            <input type="number" class="input-fff calc-input fixall" disabled>
-                            <span class="calc-text">ريال</span>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- End calc -->
 
-    <!-- Start Footer -->
-    <footer>
-        <div class="footer-form-cont">
-            <img src="images/pat3.png" class="pat">
-            <div class="container">
-                <div class="footer-form">
-                    <h3 class="footer-head fixall">للإستفسارات</h3>
-                    <form>
-                        <div class="input-cont">
-                            <input type="text" class="input-fff contact-input fixall" placeholder="الاسم بالكامل">
-                            <span class="contact-ico"><i class="fas fa-user"></i></span>
+                        <div class="contact-social">
+                            <a href="#!" class="contact-social-link mo-btn fixall"><i class="fab fa-youtube"></i></a>
+                            <a href="#!" class="contact-social-link mo-btn fixall"><i
+                                    class="fab fa-google-plus-g"></i></a>
+                            <a href="#!" class="contact-social-link mo-btn fixall"><i class="fab fa-instagram"></i></a>
+                            <a href="#!" class="contact-social-link mo-btn fixall"><i class="fab fa-twitter"></i></a>
+                            <a href="#!" class="contact-social-link mo-btn fixall"><i class="fab fa-facebook-f"></i></a>
                         </div>
-                        <div class="contact-line">
-                            <div class="input-cont">
-                                <input type="email" class="input-fff contact-input fixall"
-                                    placeholder="البريد الالكتروني">
-                                <span class="contact-ico"><i class="fas fa-envelope"></i></span>
-                            </div>
-                            <div class="input-cont">
-                                <input type="number" class="input-fff contact-input fixall" placeholder="رقم الجوال">
-                                <span class="contact-ico"><i class="fas fa-mobile-alt"></i></span>
-                            </div>
-                        </div>
-                        <div class="input-cont input-text">
-                            <textarea class="input-fff contact-input  fixall" placeholder="نص الرسالة"></textarea>
-                            <span class="contact-ico"><i class="fas fa-comment-alt"></i></span>
-                        </div>
-                        <button type="submit" class="mo-btn fixall contact-submit">ارسل</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+
+    <!-- Start Footer -->
+    <footer>
         <div class="footer-cont">
-            <img src="images/pat4.png" class="pat">
             <div class="container">
                 <div class="footer">
                     <div class="copyright">
@@ -243,6 +232,7 @@
         </div>
     </footer>
     <!-- End Footer -->
+
 
     <div class="log-modal" id="log">
         <div class="modal-absolute">
