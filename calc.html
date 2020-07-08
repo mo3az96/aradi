@@ -59,6 +59,7 @@
                                 <li class="nav-li"><a href="calc.html" class="nav-a fixall">الحاسبة العقارية</a></li>
                                 <li class="nav-li"><a href="#!" class="nav-a fixall">من نحن</a></li>
                                 <li class="nav-li"><a href="#!" class="nav-a fixall">تواصل معنا</a></li>
+                                <li class="nav-li"><a href="#log" class="nav-a fixall log">دخول</a></li>
                             </ul>
                             <a href="add-post.html" class="add-post fixall mo-btn">أعلن عن أرضك</a>
 
@@ -98,8 +99,17 @@
                                 placeholder="ابحث عن ما تريد ( المدينة - الحي - رقم الاعلان  ..">
                             <span class="search-ico"><i class="fas fa-search"></i></span>
                         </div>
-                        <div class="input-cont">
-                            <input type="text" class="input-fff search-input fixall" placeholder="نوع العقار">
+                        <div class="select-cont">
+                            <select class="add-select">
+                                <option hidden>نوع العقار</option>
+                                <option value="1">نوع 1</option>
+                                <option value="2">نوع 2</option>
+                                <option value="3">نوع 3</option>
+                                <option value="4">نوع 4</option>
+                                <option value="5">نوع 5</option>
+                                <option value="6">نوع 6</option>
+                                <option value="7">نوع 7</option>
+                            </select>
                         </div>
                         <div class="search-group">
                             <div class="price-inputs">
@@ -237,6 +247,35 @@
         </div>
     </footer>
     <!-- End Footer -->
+
+    <div class="log-modal" id="log">
+        <div class="modal-absolute">
+            <div class="mo-modal">
+                <span class="close-modal fas fa-times"></span>
+                <h2 class="modal-head fixall">تسجيل الدخول </h2>
+                <form class="log-form">
+                    <div class="input-cont">
+                        <input type="text" class="input-fff log-input fixall"
+                            placeholder="البريد الإلكترونى أو رقم الهاتف">
+                        <span class="log-ico"><i class="fas fa-user"></i></span>
+                    </div>
+                    <div class="input-cont">
+                        <input type="password" class="input-fff log-input fixall" placeholder="كلمة المرور ">
+                        <span class="log-ico"><i class="fas fa-lock"></i></span>
+                    </div>
+                    <div class="link-cont">
+                        <a href="#!" class="forget fixall">هل نسيت كلمة المرور؟</a>
+                    </div>
+                    <button type="submit" class="mo-btn fixall log-submit">دخول</button>
+
+                    <div class="link-cont">
+                        ليس لديك حساب؟
+                        <a href="#!" class="forget fixall">تسجيل حساب جديد </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery-2.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>

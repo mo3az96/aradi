@@ -59,6 +59,7 @@
                                 <li class="nav-li"><a href="calc.html" class="nav-a fixall">الحاسبة العقارية</a></li>
                                 <li class="nav-li"><a href="#!" class="nav-a fixall">من نحن</a></li>
                                 <li class="nav-li"><a href="#!" class="nav-a fixall">تواصل معنا</a></li>
+                                <li class="nav-li"><a href="#log" class="nav-a fixall log">دخول</a></li>
                             </ul>
                             <a href="add-post.html" class="add-post fixall mo-btn">أعلن عن أرضك</a>
 
@@ -86,46 +87,8 @@
     <!-- End Header -->
 
     <!-- Start Main -->
-    <main style="background-image: url(images/main2.jpg);">
+    <main style="background-image: url(images/main2.jpg);" class="add-page">
         <img src="images/pat1.png" class="main-pat">
-        <div class="container">
-            <div class="main">
-                <h1 class="main-title fixall">اول موقع عقاري متخصص في الاراضي</h1>
-                <form class="search-form">
-                    <div class="search-line">
-                        <div class="input-cont">
-                            <input type="text" class="input-fff search-input fixall"
-                                placeholder="ابحث عن ما تريد ( المدينة - الحي - رقم الاعلان  ..">
-                            <span class="search-ico"><i class="fas fa-search"></i></span>
-                        </div>
-                        <div class="input-cont">
-                            <input type="text" class="input-fff search-input fixall" placeholder="نوع العقار">
-                        </div>
-                        <div class="search-group">
-                            <div class="price-inputs">
-                                <div class="input-cont">
-                                    <input type="number" class="input-fff search-input fixall" placeholder="أقل سعر">
-                                </div>
-                                <div class="input-cont">
-                                    <input type="number" class="input-fff search-input fixall" placeholder="أكبر سعر">
-                                </div>
-                            </div>
-                            <div class="area-inputs">
-                                <div class="input-cont">
-                                    <input type="number" class="input-fff search-input fixall"
-                                        placeholder="اقل المساحة">
-                                </div>
-                                <div class="input-cont">
-                                    <input type="number" class="input-fff search-input fixall"
-                                        placeholder="اكبر المساحة">
-                                </div>
-                            </div>
-                        </div>
-                        <button type="submit" class="mo-btn search-btn fixall">ابحث عن أرض</button>
-                    </div>
-                </form>
-            </div>
-        </div>
     </main>
     <!-- End Main -->
 
@@ -367,6 +330,35 @@
         </div>
     </footer>
     <!-- End Footer -->
+
+    <div class="log-modal" id="log">
+        <div class="modal-absolute">
+            <div class="mo-modal">
+                <span class="close-modal fas fa-times"></span>
+                <h2 class="modal-head fixall">تسجيل الدخول </h2>
+                <form class="log-form">
+                    <div class="input-cont">
+                        <input type="text" class="input-fff log-input fixall"
+                            placeholder="البريد الإلكترونى أو رقم الهاتف">
+                        <span class="log-ico"><i class="fas fa-user"></i></span>
+                    </div>
+                    <div class="input-cont">
+                        <input type="password" class="input-fff log-input fixall" placeholder="كلمة المرور ">
+                        <span class="log-ico"><i class="fas fa-lock"></i></span>
+                    </div>
+                    <div class="link-cont">
+                        <a href="#!" class="forget fixall">هل نسيت كلمة المرور؟</a>
+                    </div>
+                    <button type="submit" class="mo-btn fixall log-submit">دخول</button>
+
+                    <div class="link-cont">
+                        ليس لديك حساب؟
+                        <a href="#!" class="forget fixall">تسجيل حساب جديد </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery-2.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
