@@ -63,7 +63,10 @@ $(document).ready(function () {
             $("body").removeClass("overflow");
         });
     }
-
+    $(".search-icon").click(function () {
+        $(".search-icon").toggleClass("open");
+        $(".fixed-form").toggleClass("open");
+    });
 
     $('.condtion-cont input').change(function () {
         if ($(this).is(':checked')) {
@@ -74,21 +77,7 @@ $(document).ready(function () {
             $(".add-submit").addAttr("disabled")
         }
     });
-    // $(".input-file").change(function () {
-    //     var file = $('.input-file')[0].files[0]
-    //     var reader = new FileReader();
-    //     var filename = $(".input-file").val();
-    //     filename = filename.substring(filename.lastIndexOf('\\') + 1);
-    //     console.log(filename);
 
-
-    //     if (file) {
-    //         $(".file-text").html(file.name)
-    //     }
-    //     else {
-    //         $(".file-text").html("+ أرفق صورة صك الارض")
-    //     }
-    // });
 
     $("#inputGroupFile").change(function (event) {
         readURL(this);
