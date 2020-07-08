@@ -5,7 +5,7 @@ $(window).on('load', function () {
     });
 });
 $(document).ready(function () {
-    $('.nav-a.log').click(function () {
+    $('.log').click(function () {
         $(".log-modal").fadeIn(300);
         $(".mo-modal").addClass("open");
         $("body").addClass("overflow");
@@ -74,9 +74,13 @@ $(document).ready(function () {
         if ($(this).is(':checked')) {
             $(".add-submit").removeClass("disabled")
             $(".add-submit").removeAttr("disabled")
+            $(".reg-submit").removeClass("disabled")
+            $(".reg-submit").removeAttr("disabled")
         } else {
             $(".add-submit").addClass("disabled")
             $(".add-submit").addAttr("disabled")
+            $(".reg-submit").addClass("disabled")
+            $(".reg-submit").addAttr("disabled")
         }
     });
 
