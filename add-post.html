@@ -87,7 +87,7 @@
     <!-- End Header -->
 
     <!-- Start Main -->
-    <main style="background-image: url(images/main2.jpg);" class="add-page">
+    <main style="background-image: url(images/main2.jpg);" class="org-page">
         <img src="images/pat1.png" class="main-pat">
     </main>
     <!-- End Main -->
@@ -249,25 +249,26 @@
                         </div>
                     </div>
 
-                    <div class="add-inputlabel ">
+                    <div class="add-inputlabel add-inputfile">
                         <span class="add-label">أرفق صورة صك الارض</span>
                         <div class="input-file-cont">
-                            <input type="file" class="input-file fixall">
+                            <input type="file" class="input-file fixall" accept="image/*" id="inputGroupFile">
                             <span class="file-text">+ أرفق صورة صك الارض</span>
                         </div>
+                        <div class="img-preview"> <img id="preview" class="img-responsive" /></div>
                     </div>
                     <div class="condtion-row ">
                         <span class="add-label"></span>
                         <div class="condtion-cont">
                             <div class="custom-check">
-                                <input type="checkbox" checked>
+                                <input type="checkbox" value="condition">
                                 <span class="checkboxmark"></span>
                                 أوافق على كل
                             </div>
                             <a href="#!" class="conditions fixall">الشروط و سياسة الاستخدام</a>
                         </div>
                     </div>
-                    <button type="submit" class="add-submit fixall mo-btn">أعلن عن أرض</button>
+                    <button type="submit" class="add-submit fixall mo-btn disabled" disabled>أعلن عن أرض</button>
                 </form>
             </div>
         </div>

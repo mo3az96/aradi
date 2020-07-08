@@ -92,6 +92,11 @@ input[type=number] {
   background-color: #006ec9;
 }
 
+.mo-btn.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 .add-post {
   width: 240px;
   height: 53px;
@@ -1856,13 +1861,13 @@ header {
   }
 }
 
-.add-page {
+.org-page {
   padding: 100px 0;
   background-position: center;
 }
 
 @media (max-width: 992px) {
-  .add-page {
+  .org-page {
     padding: 60px 0;
     background-attachment: unset;
   }
@@ -2369,6 +2374,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+  height: 65px;
 }
 
 @media (max-width: 992px) {
@@ -2393,6 +2399,35 @@ header {
 .input-file-cont .file-text {
   font-size: 18px;
   color: #757575;
+}
+
+.add-inputfile {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-inputfile .img-preview {
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+  background-color: #fff;
+  display: none;
+}
+
+.add-inputfile .img-preview img {
+  max-width: 100%;
+  width: auto;
+  height: 100%;
+  margin: auto;
+}
+
+@media (max-width: 992px) {
+  .add-inputfile {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .condtion-cont {

@@ -64,13 +64,49 @@ $(document).ready(function () {
         });
     }
 
-    $(".input-file").change(function () {
-        var file = $('.input-file')[0].files[0]
-        if (file) {
-            $(".file-text").html(file.name)
-        }
-        else {
-            $(".file-text").html("+ أرفق صورة صك الارض")
+
+    $('.condtion-cont input').change(function () {
+        if ($(this).is(':checked')) {
+            $(".add-submit").removeClass("disabled")
+            $(".add-submit").removeAttr("disabled")
+        } else {
+            $(".add-submit").addClass("disabled")
+            $(".add-submit").addAttr("disabled")
         }
     });
+    // $(".input-file").change(function () {
+    //     var file = $('.input-file')[0].files[0]
+    //     var reader = new FileReader();
+    //     var filename = $(".input-file").val();
+    //     filename = filename.substring(filename.lastIndexOf('\\') + 1);
+    //     console.log(filename);
+
+
+    //     if (file) {
+    //         $(".file-text").html(file.name)
+    //     }
+    //     else {
+    //         $(".file-text").html("+ أرفق صورة صك الارض")
+    //     }
+    // });
+
+    $("#inputGroupFile").change(function (event) {
+        readURL(this);
+    });
+
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            var filename = $("#inputGroupFile").val();
+            filename = filename.substring(filename.lastIndexOf('\\') + 1);
+            reader.onload = function (e) {
+                if ($(window).width() > 992) {
+                    $('#preview').attr('src', e.target.result);
+                    $('.img-preview').show();
+                }
+                $('.file-text').text(filename);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
 });
