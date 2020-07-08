@@ -677,8 +677,8 @@ main .main-pat {
 
 .search-icon {
   font-size: 20px;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,8 +719,9 @@ main .main-pat {
 
 @media (max-width: 767px) {
   .fixed-form {
-    right: -310px;
+    right: calc(-100% + 55px);
     top: 150px;
+    width: calc(100% - 15px);
   }
 }
 
@@ -738,7 +739,7 @@ main .main-pat {
 
 @media (max-width: 767px) {
   .fixed-form .search-form {
-    width: 310px;
+    width: 100%;
   }
 }
 
