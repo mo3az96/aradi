@@ -59,7 +59,29 @@
                                 <li class="nav-li"><a href="calc.html" class="nav-a fixall">الحاسبة العقارية</a></li>
                                 <li class="nav-li"><a href="#!" class="nav-a fixall">من نحن</a></li>
                                 <li class="nav-li"><a href="contact.html" class="nav-a fixall">تواصل معنا</a></li>
-                                <li class="nav-li log-li"><a href="#log" class="nav-a fixall log">دخول</a></li>
+                                <li class="nav-li log-li drop-li">
+                                    <a href="#!" class="nav-a fixall log">
+                                        <i class="fas fa-user nav-i"></i>
+                                        اسم المستخدم
+                                    </a>
+                                    <ul class="sub-ul list-unstyled fixall">
+                                        <li class="sub-li">
+                                            <a href="edit.html" class="sub-a fixall">تعديل حسابى</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="note.html" class="sub-a fixall">الإشعارات</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="MyPost.html" class="sub-a fixall">إعلاناتى</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="FavPost.html" class="sub-a fixall">الإعلانات المفضلة</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="index.html" class="sub-a fixall">تسجيل الخروج</a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                             <a href="add-post.html" class="add-post fixall mo-btn">أعلن عن أرضك</a>
 
@@ -140,180 +162,79 @@
     <div class="content">
         <img src="images/pat2.png" class="posts-pat">
         <div class="container">
-            <div class="add-post-cont">
-                <h4 class="addPost-head fixall">أعلن عن أرضك</h4>
-                <form class="add-form">
-                    <div class="post-id">
-                        <span class="add-label">رقم الاعلان</span>
-                        <div class="postid-num">#123456</div>
-                    </div>
-                    <div class="add-inputlabel req">
-                        <div class="add-label"><span>الاسم كامل</span></div>
-                        <div class="add-inputs">
-                            <div class="input-cont">
-                                <input type="text" class="input-fff add-input fixall" placeholder="أدخل الأسم كامل">
-                            </div>
-                            <div class="input-dec">
-                                <div class="custom-check">
-                                    <input type="checkbox" checked>
-                                    <span class="checkboxmark"></span>
-                                    لن يظهر الاسم بالاعلان
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="add-inputlabel req">
-                        <div class="add-label"><span>رقم الجوال</span></div>
-                        <div class="add-inputs">
-                            <div class="input-cont">
-                                <input type="number" class="input-fff add-input fixall" placeholder="أدخل رقم الجوال">
-                            </div>
-                            <div class="input-dec">
-                                05XXXXXX
-                            </div>
-                        </div>
-                    </div>
-                    <div class="add-inputlabel req">
-                        <div class="add-label"><span>صفة المعلن</span></div>
-                        <div class="select-cont">
-                            <select class="add-select">
-                                <option hidden>اختر من القائمة</option>
-                                <option value="1">صفة 1</option>
-                                <option value="2">صفة 2</option>
-                                <option value="3">صفة 3</option>
-                                <option value="4">صفة 4</option>
-                                <option value="5">صفة 5</option>
-                                <option value="6">صفة 6</option>
-                                <option value="7">صفة 7</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="add-inputlabel req">
-                        <div class="add-label"><span>نوع الأرض ( بيع )</span></div>
-                        <div class="select-cont">
-                            <select class="add-select">
-                                <option hidden>اختر من القائمة</option>
-                                <option value="1">سكنية 1</option>
-                                <option value="2">سكنية 2</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="add-inputlabel req">
-                        <div class="add-label"><span>المدينة \ المحافظة</span></div>
-                        <div class="input-cont">
-                            <input type="text" class="input-fff add-input fixall" placeholder="أدخل المدينة \ المحافظة">
-                        </div>
-                    </div>
-                    <div class="add-inputlabel req">
-                        <div class="add-label"><span>الحي</span></div>
-                        <div class="input-cont">
-                            <input type="text" class="input-fff add-input fixall" placeholder="ادخل اسم الحي">
-                        </div>
-                    </div>
-                    <div class="add-inputlabel req">
-                        <div class="add-label"><span>المساحة</span></div>
-                        <div class="input-cont">
-                            <input type="number" class="input-fff add-input fixall" placeholder="ادخل المساحة بالمتر">
-                        </div>
-                    </div>
-                    <div class="add-inputlabel req">
-                        <div class="add-label">
-                            <span>الواجهة</span>
-                            <div class="item-info">
-                                <span class="fas fa-info-circle info-icon"></span>
-                                <div class="tool-tip text-hint">
-                                    <p class="hint-desc fixall">نرجو منك كتابة عدد
-                                        الشوارع وتحديد الاتجاهات وعرض الشارع</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="inputs3-group">
-                            <div class="input-cont">
-                                <input type="number" class="input-fff add-input fixall" placeholder="ادخل عدد الشوارع">
-                                <div class="item-info">
-                                    <span class="fas fa-info-circle info-icon"></span>
-                                    <div class="tool-tip img-hint">
-                                        <p class="hint-desc fixall">ادخل عدد الشوارع المحيطة بالارض</p>
-                                        <div class="hint-shape">
-                                            <img src="images/shape.png" class="img-responsive ">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="inputs-line">
+            <div class="row">
+                <div class="col-md-4">
+                    <aside>
+                        <ul class="logedSide-ul list-unstyled fixall">
+                            <li class="logedSide-li">
+                                <a href="edit.html" class="logedSide-a fixall active">تعديل حسابى</a>
+                            </li>
+                            <li class="logedSide-li">
+                                <a href="note.html" class="logedSide-a fixall">الإشعارات</a>
+                            </li>
+                            <li class="logedSide-li">
+                                <a href="MyPost.html" class="logedSide-a fixall">إعلاناتى</a>
+                            </li>
+                            <li class="logedSide-li">
+                                <a href="FavPost.html" class="logedSide-a fixall">الإعلانات المفضلة</a>
+                            </li>
+                            <li class="logedSide-li">
+                                <a href="index.html" class="logedSide-a fixall">تسجيل الخروج</a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-md-8">
+                    <div class="reg-post-cont">
+                        <h4 class="loged-head fixall">تعديل حسابى</h4>
+                        <form class="reg-form">
+                            <div class="reg-inputlabel req">
+                                <div class="reg-label"><span>الاسم كامل</span></div>
                                 <div class="input-cont">
-                                    <input type="number" class="input-fff add-input fixall" placeholder="عرض الشارع">
-                                    <div class="item-info">
-                                        <span class="fas fa-info-circle info-icon"></span>
-                                        <div class="tool-tip img-hint">
-                                            <p class="hint-desc fixall">ادخل عرض الشارع</p>
-                                            <div class="hint-shape">
-                                                <img src="images/shape.png" class="img-responsive ">
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <input type="text" class="input-fff reg-input fixall" placeholder="أدخل الأسم كامل">
                                 </div>
+                            </div>
+                            <div class="reg-inputlabel req">
+                                <div class="reg-label"><span>رقم الجوال</span></div>
                                 <div class="input-cont">
-                                    <input type="number" class="input-fff add-input fixall" placeholder="الاتجاه">
-                                    <div class="item-info">
-                                        <span class="fas fa-info-circle info-icon"></span>
-                                        <div class="tool-tip img-hint">
-                                            <p class="hint-desc fixall">ادخل الاتجاه</p>
-                                            <div class="hint-shape">
-                                                <img src="images/shape.png" class="img-responsive ">
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <input type="number" class="input-fff reg-input fixall"
+                                        placeholder="أدخل رقم الجوال">
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="add-inputlabel req">
-                        <div class="add-label"><span>الأطوال</span></div>
-                        <div class="inputs2-group">
-                            <div class="input-cont">
-                                <input type="number" class="input-fff add-input fixall" placeholder="الأطوال">
+                            <div class="reg-inputlabel req">
+                                <div class="reg-label"><span>البريد الإلكترونى</span></div>
+                                <div class="input-cont">
+                                    <input type="email" class="input-fff reg-input fixall"
+                                        placeholder="أدخل البريد الإلكترونى">
+                                </div>
                             </div>
-                            <div class="input-cont">
-                                <input type="number" class="input-fff add-input fixall" placeholder="العمق">
+                            <div class="reg-inputlabel req">
+                                <div class="reg-label"><span>كلمة المرور</span></div>
+                                <div class="input-cont">
+                                    <input type="password" class="input-fff reg-input fixall"
+                                        placeholder="أدخل كلمة المرور">
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="add-inputlabel req">
-                        <div class="add-label"><span>السعر</span></div>
-                        <div class="add-inputs">
-                            <div class="input-cont">
-                                <input type="text" class="input-fff add-input fixall" placeholder="ادخل سعر المتر">
-                                <span class="add-text">السعر بدون ضريبة</span>
+                            <div class="reg-inputlabel req">
+                                <div class="reg-label"><span>تأكيد كلمة المرور</span></div>
+                                <div class="input-cont">
+                                    <input type="password" class="input-fff reg-input fixall"
+                                        placeholder="أدخل كلمة المرور">
+                                </div>
                             </div>
-                            <div class="input-btn">
-                                <a href="calc.html" class="calc-post fixall mo-btn">الحاسبة العقارية</a>
+                            <div class="reg-inputlabel reg-inputfile">
+                                <span class="reg-label">أضف صوره</span>
+                                <div class="input-file-cont">
+                                    <input type="file" class="input-file fixall" accept="image/*" id="inputGroupFile">
+                                    <span class="file-text">+ أضف صوره</span>
+                                </div>
+                                <div class="img-preview has-img"> <img src="images/user.png" id="preview"
+                                        class="img-responsive" /></div>
                             </div>
-                        </div>
+                            <button type="submit" class="reg-submit fixall mo-btn">حفظ</button>
+                        </form>
                     </div>
-
-                    <div class="add-inputlabel add-inputfile">
-                        <span class="add-label">أرفق صورة صك الارض</span>
-                        <div class="input-file-cont">
-                            <input type="file" class="input-file fixall" accept="image/*" id="inputGroupFile">
-                            <span class="file-text">+ أرفق صورة صك الارض</span>
-                        </div>
-                        <div class="img-preview"> <img id="preview" class="img-responsive" /></div>
-                    </div>
-                    <div class="condtion-row ">
-                        <span class="add-label"></span>
-                        <div class="condtion-cont">
-                            <div class="custom-check">
-                                <input type="checkbox" value="condition">
-                                <span class="checkboxmark"></span>
-                                أوافق على كل
-                            </div>
-                            <a href="#!" class="conditions fixall">الشروط و سياسة الاستخدام</a>
-                        </div>
-                    </div>
-                    <button type="submit" class="add-submit fixall mo-btn disabled" disabled>أعلن عن أرض</button>
-                </form>
+                </div>
             </div>
         </div>
     </div>
@@ -388,36 +309,6 @@
         </div>
     </footer>
     <!-- End Footer -->
-
-    <div class="log-modal" id="log">
-        <div class="modal-absolute">
-            <div class="mo-modal">
-                <span class="close-modal fas fa-times"></span>
-                <h2 class="modal-head fixall">تسجيل الدخول </h2>
-                <form class="log-form">
-                    <div class="input-cont">
-                        <input type="text" class="input-fff log-input fixall"
-                            placeholder="البريد الإلكترونى أو رقم الهاتف">
-                        <span class="log-ico"><i class="fas fa-user"></i></span>
-                    </div>
-                    <div class="input-cont">
-                        <input type="password" class="input-fff log-input fixall" placeholder="كلمة المرور ">
-                        <span class="log-ico"><i class="fas fa-lock"></i></span>
-                    </div>
-                    <div class="link-cont">
-                        <a href="forget.html" class="forget fixall">هل نسيت كلمة المرور؟</a>
-                    </div>
-                    <!-- <button type="submit" class="mo-btn fixall log-submit">دخول</button> -->
-                    <a href="edit.html" class="mo-btn fixall log-submit">دخول</a>
-
-                    <div class="link-cont">
-                        ليس لديك حساب؟
-                        <a href="register.html" class="forget fixall">تسجيل حساب جديد </a>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
     <script src="js/jquery-2.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>

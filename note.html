@@ -59,7 +59,29 @@
                                 <li class="nav-li"><a href="calc.html" class="nav-a fixall">الحاسبة العقارية</a></li>
                                 <li class="nav-li"><a href="#!" class="nav-a fixall">من نحن</a></li>
                                 <li class="nav-li"><a href="contact.html" class="nav-a fixall">تواصل معنا</a></li>
-                                <li class="nav-li log-li"><a href="#log" class="nav-a fixall log">دخول</a></li>
+                                <li class="nav-li log-li drop-li">
+                                    <a href="#!" class="nav-a fixall log">
+                                        <i class="fas fa-user nav-i"></i>
+                                        اسم المستخدم
+                                    </a>
+                                    <ul class="sub-ul list-unstyled fixall">
+                                        <li class="sub-li">
+                                            <a href="edit.html" class="sub-a fixall">تعديل حسابى</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="note.html" class="sub-a fixall">الإشعارات</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="MyPost.html" class="sub-a fixall">إعلاناتى</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="FavPost.html" class="sub-a fixall">الإعلانات المفضلة</a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="index.html" class="sub-a fixall">تسجيل الخروج</a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                             <a href="add-post.html" class="add-post fixall mo-btn">أعلن عن أرضك</a>
 
@@ -140,63 +162,66 @@
     <div class="content">
         <img src="images/pat2.png" class="posts-pat">
         <div class="container">
-            <div class="reg-post-cont">
-                <h4 class="reg-head fixall">تعديل الحساب</h4>
-                <form class="reg-form">
-                    <div class="reg-inputlabel req">
-                        <div class="reg-label"><span>الاسم كامل</span></div>
-                        <div class="input-cont">
-                            <input type="text" class="input-fff reg-input fixall" placeholder="أدخل الأسم كامل">
-                        </div>
-                    </div>
-                    <div class="reg-inputlabel req">
-                        <div class="reg-label"><span>رقم الجوال</span></div>
-                        <div class="input-cont">
-                            <input type="number" class="input-fff reg-input fixall" placeholder="أدخل رقم الجوال">
-                        </div>
-                    </div>
-                    <div class="reg-inputlabel req">
-                        <div class="reg-label"><span>البريد الإلكترونى</span></div>
-                        <div class="input-cont">
-                            <input type="email" class="input-fff reg-input fixall" placeholder="أدخل البريد الإلكترونى">
-                        </div>
-                    </div>
-                    <div class="reg-inputlabel req">
-                        <div class="reg-label"><span>كلمة المرور</span></div>
-                        <div class="input-cont">
-                            <input type="password" class="input-fff reg-input fixall" placeholder="أدخل كلمة المرور">
-                        </div>
-                    </div>
-                    <div class="reg-inputlabel req">
-                        <div class="reg-label"><span>تأكيد كلمة المرور</span></div>
-                        <div class="input-cont">
-                            <input type="password" class="input-fff reg-input fixall" placeholder="أدخل كلمة المرور">
-                        </div>
-                    </div>
-                    <div class="reg-inputlabel reg-inputfile">
-                        <span class="reg-label">أضف صوره</span>
-                        <div class="input-file-cont">
-                            <input type="file" class="input-file fixall" accept="image/*" id="inputGroupFile">
-                            <span class="file-text">+ أضف صوره</span>
-                        </div>
-                        <div class="img-preview"> <img id="preview" class="img-responsive" /></div>
-                    </div>
-
-
-
-                    <div class="condtion-row ">
-                        <span class="reg-label"></span>
-                        <div class="condtion-cont">
-                            <div class="custom-check">
-                                <input type="checkbox" value="condition">
-                                <span class="checkboxmark"></span>
-                                أوافق على كل
+            <div class="row">
+                <div class="col-md-4">
+                    <aside>
+                        <ul class="logedSide-ul list-unstyled fixall">
+                            <li class="logedSide-li">
+                                <a href="edit.html" class="logedSide-a fixall ">تعديل حسابى</a>
+                            </li>
+                            <li class="logedSide-li">
+                                <a href="note.html" class="logedSide-a fixall active">الإشعارات</a>
+                            </li>
+                            <li class="logedSide-li">
+                                <a href="MyPost.html" class="logedSide-a fixall ">إعلاناتى</a>
+                            </li>
+                            <li class="logedSide-li">
+                                <a href="FavPost.html" class="logedSide-a fixall">الإعلانات المفضلة</a>
+                            </li>
+                            <li class="logedSide-li">
+                                <a href="index.html" class="logedSide-a fixall">تسجيل الخروج</a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-md-8">
+                    <div class="reg-post-cont">
+                        <h4 class="loged-head fixall">الإشعارات</h4>
+                        <div class="notes">
+                            <div class="note">
+                                <h5 class="note-title fixall">
+                                    عنوان اشعار تجريبى1
+                                </h5>
+                                <p class="note-body fixall">
+                                    خلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب
+                                    اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد، مما يجعله أكثر من 2000 عام في القدم.
+                                </p>
+                                <span class="fas fa-times remove-btn"></span>
                             </div>
-                            <a href="#!" class="conditions fixall">الشروط و سياسة الاستخدام</a>
+                            <div class="note">
+                                <h5 class="note-title fixall">
+                                    عنوان اشعار تجريبى2
+                                </h5>
+                                <p class="note-body fixall">
+                                    خلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب
+                                    اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد، مما يجعله أكثر من 2000 عام في القدم.
+                                    خلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب
+                                    اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد، مما يجعله أكثر من 2000 عام في القدم
+                                </p>
+                                <span class="fas fa-times remove-btn"></span>
+                            </div>
+                            <div class="note">
+                                <h5 class="note-title fixall">
+                                    عنوان اشعار تجريبى3
+                                </h5>
+                                <p class="note-body fixall">
+                                    خلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ .
+                                </p>
+                                <span class="fas fa-times remove-btn"></span>
+                            </div>
                         </div>
                     </div>
-                    <button type="submit" class="reg-submit fixall mo-btn disabled" disabled>تسجيل جديد</button>
-                </form>
+                </div>
             </div>
         </div>
     </div>
@@ -271,36 +296,6 @@
         </div>
     </footer>
     <!-- End Footer -->
-
-    <div class="log-modal" id="log">
-        <div class="modal-absolute">
-            <div class="mo-modal">
-                <span class="close-modal fas fa-times"></span>
-                <h2 class="modal-head fixall">تسجيل الدخول </h2>
-                <form class="log-form">
-                    <div class="input-cont">
-                        <input type="text" class="input-fff log-input fixall"
-                            placeholder="البريد الإلكترونى أو رقم الهاتف">
-                        <span class="log-ico"><i class="fas fa-user"></i></span>
-                    </div>
-                    <div class="input-cont">
-                        <input type="password" class="input-fff log-input fixall" placeholder="كلمة المرور ">
-                        <span class="log-ico"><i class="fas fa-lock"></i></span>
-                    </div>
-                    <div class="link-cont">
-                        <a href="forget.html" class="forget fixall">هل نسيت كلمة المرور؟</a>
-                    </div>
-                    <!-- <!-- <button type="submit" class="mo-btn fixall log-submit">دخول</button> -->
-                    <a href="edit.html" class="mo-btn fixall log-submit">دخول</a>
-
-                    <div class="link-cont">
-                        ليس لديك حساب؟
-                        <a href="register.html" class="forget fixall">تسجيل حساب جديد </a>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
     <script src="js/jquery-2.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>

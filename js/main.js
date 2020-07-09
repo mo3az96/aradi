@@ -64,6 +64,11 @@ $(document).ready(function () {
             $(".nav-cont").removeClass("nav-in");
             $("body").removeClass("overflow");
         });
+
+        $('.drop-li .nav-a').click(function () {
+            $(".sub-ul").slideToggle(400);
+            $(".drop-li .nav-a").toggleClass("open");
+        });
     }
     $(".search-icon").click(function () {
         $(".search-icon").toggleClass("open");
@@ -97,7 +102,8 @@ $(document).ready(function () {
             reader.onload = function (e) {
                 if ($(window).width() > 992) {
                     $('#preview').attr('src', e.target.result);
-                    $('.img-preview').show();
+                    $('.img-preview').hide();
+                    $('.img-preview').fadeIn(200);
                 }
                 $('.file-text').text(filename);
             }
